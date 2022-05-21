@@ -1,0 +1,477 @@
+
+
+
+/*        Responsive          */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .top-contact li {
+        margin-right: 10px;
+    }
+    .top-icons li {
+        margin-left: 12px;
+    }
+
+    .follow-box{
+        top: 25%;
+        left: 39%;
+    }
+
+    .countdown_box .countdown {
+        font-size: 1em;
+    }
+    span.cd_text {
+        font-size: .9em;
+    }
+    .countdown-banner h4{
+        display: none;
+    }
+    .countdown-banner {
+        top: 120px;
+        right: -25px;
+    }
+    .countdown-banner p {
+        font-size: 2.5em;
+        text-align: center;
+    }
+    .countdown-banner button{
+        margin-left: 135px;
+    }
+
+    .product-number input.minus {
+        left: 306px;
+    }
+    .product-number input.plus {
+        right: 306px;
+    }
+
+    .pro-price-sec .add-to-cart .w-100 {
+        width: 33%!important;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /*/**!  */
+    .header-center{
+        display: none;
+    }
+
+    .top-contact li {
+        margin-right: 10px;
+    }
+    .top-icons li {
+        margin-left: 12px;
+    }
+
+    .top-icons span{
+        display: none;
+    }
+    .top-icons i{
+        margin-right: 6px;
+        font-size: 1.5em;
+    }
+
+    .mobile-header-container{
+        display: block !important;
+    }
+    .carousel-indicators .btn-slider{
+        width: 5px;
+        height: 5px;
+        margin: 0 7px;
+    }
+    .carousel-caption h2{
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #111;
+        font-size: .9rem;
+        margin-bottom: 10px;
+    }
+    .carousel-caption button{
+        font-size: .9em;
+        padding: 5px 15px;
+    }
+    .carousel-caption p{
+        margin-bottom: 10px;
+    }
+
+
+    .follow-box{
+        top: 30%;
+        left: 37%;
+    }
+    .service-box {
+        padding: 20px 0;
+    }
+    .countdown-banner {
+        background: rgba(0,0,0,0.3);
+        padding: 36px 91px;
+        top: 64px;
+    }
+    .countdown-banner p{
+        text-align: center;
+    }
+    .countdown-banner h4{
+        font-weight: bolder;
+    }
+    .countdown-banner button{
+        margin-left: 150px;
+    }
+    .background_bg  .offset-6 {
+        margin-left: 0;
+    }
+
+    .product-number input.plus {
+        right: 230px;
+    }
+    .product-number input.minus {
+        left: 230px;
+    }
+
+    .pro-price-sec .add-to-cart .w-100 {
+        width: 60%!important;
+    }
+
+
+   .pro-gallery .pro-service {
+        margin: 10px 0;
+    }
+
+   .pro-gallery .pro-meta > li {
+       padding: 10px 0;
+   }
+
+
+   .single-blog .sidebar{
+       margin-top: 40px;
+
+   }
+   .recent-post-main  .post-img img{
+       width: 120px;
+   }
+    .recent-post-main .post-content h6{
+        font-size: 1.2em;
+        font-family: 'Jost', sans-serif;
+        font-weight: 300;
+        color: rgba(22,22,22,1);
+
+    }
+    .recent-post-main .post-content p{
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .recent-post-main{
+        position: relative;
+    }
+    .recent-post-main .post-content{
+        position: absolute;
+        top: 25%;
+        left: 150px;
+    }
+
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+
+    .top-contact li {
+        margin-right: 10px;
+    }
+    .top-icons li {
+        margin-left: 12px;
+    }
+    .top-icons span{
+        display: none;
+    }
+    .top-icons i{
+        margin-right: 6px;
+        font-size: 1em;
+    }
+    .top-contact span{
+        font-size: 0.7em;
+    }
+
+
+
+    .carousel-item .d-none{
+        display: block !important;
+    }
+
+    .carousel-indicators .btn-slider{
+        width: 5px;
+        height: 5px;
+        margin: 0 7px;
+    }
+
+    .carousel-caption{
+        top: 20%;
+        right: 0;
+
+    }
+    .carousel-caption h2{
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #111;
+        font-size: 1.7em !important;
+        margin-bottom: 20px;
+    }
+    .carousel-caption button{
+        font-size: .9em;
+        padding: 5px 15px;
+    }
+    .carousel-caption h4{
+        margin-bottom: 5px;
+    }
+    .carousel-caption p{
+        display: none;
+    }
+
+    .carousel-caption button{
+        margin-left: 25px;
+    }
+
+    .mobile-header-container{
+        display: block !important;
+    }
+
+    .follow-box{
+        top: 27%;
+        left: 34%;
+    }
+    .countdown-banner {
+        background: rgba(0,0,0,0.3);
+        padding: 36px 91px;
+        top: 64px;
+    }
+    .countdown-banner p{
+        text-align: center;
+    }
+    .countdown-banner h4{
+        font-weight: bolder;
+    }
+    .countdown-banner button{
+        margin-left: 150px;
+    }
+    .countdown_box .countdown {
+        font-size: 1.1em;
+    }
+    pan.cd_text {
+        font-size: 0.8em;
+    }
+    .background_bg .offset-6 {
+        margin-left: 10%;
+    }
+
+    .product-number input.plus {
+        right: 170px;
+    }
+    .product-number input.minus{
+        left: 170px;
+    }
+
+    .pro-price-sec .add-to-cart .w-100 {
+        width: 90%!important;
+    }
+
+
+   .pro-gallery  .pro-service .pro-srv-icon {
+        justify-content: start;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 20px 22px;
+    }
+
+
+
+    .single-blog .sidebar{
+        margin-top: 40px;
+
+    }
+    .recent-post-main  .post-img img{
+        width: 120px;
+    }
+    .recent-post-main .post-content h6{
+        font-size: 1.2em;
+        font-family: 'Jost', sans-serif;
+        font-weight: 300;
+        color: rgba(22,22,22,1);
+
+    }
+    .recent-post-main .post-content p{
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .recent-post-main{
+        position: relative;
+    }
+    .recent-post-main .post-content{
+        position: absolute;
+        top: 25%;
+        left: 150px;
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+
+    .top-contact li {
+        margin-right: 10px;
+    }
+    .top-icons li {
+        margin-left: 12px;
+    }
+    .top-icons span{
+        display: none;
+    }
+    .top-icons i{
+        margin-right: 6px;
+        font-size: 1em;
+    }
+    .top-contact i{
+        font-size: 1em;
+        margin-right: 0;
+    }
+    .top-contact span{
+        font-size: .8em;
+    }
+    .carousel-item .d-none{
+        display: block !important;
+    }
+    .carousel-indicators .btn-slider{
+        width: 5px;
+        height: 5px;
+        margin: 0 7px;
+    }
+
+    .carousel-caption{
+        top: 9%;
+        right: 0;
+    }
+    .carousel-caption h2{
+        font-family: 'Barlow Condensed', sans-serif;
+        color: #111;
+        font-size: 1.2em !important;
+        margin-bottom: 10px;
+    }
+    .carousel-caption button{
+        font-size: .9em;
+        padding: 5px 15px;
+
+    }
+    .carousel-caption h4{
+        margin-bottom: 5px;
+        font-size: 1.16em !important;
+
+    }
+    .carousel-caption p{
+        display: none;
+    }
+
+    .carousel-caption button{
+        margin-left: 25px;
+        font-size: .7em;
+    }
+    .mobile-header-container{
+        display: block !important;
+    }
+
+    .pro-box{
+        margin: 10px 20px ;
+    }
+    .service {
+        margin: 50px 20px;
+    }
+    .countdown-banner {
+        background: rgba(0,0,0,0.3);
+        padding: 36px 91px;
+        top: 64px;
+    }
+    .countdown-banner p{
+        text-align: center;
+    }
+    .countdown-banner h4{
+        font-weight: bolder;
+    }
+    .countdown-banner button{
+        margin-left: 150px;
+    }
+    .countdown_box .countdown {
+        font-size: 1.1em;
+    }
+    pan.cd_text {
+        font-size: 0.8em;
+    }
+    .background_bg .offset-6 {
+        margin-left: 10%;
+    }
+    .countdown-banner h4 .fs-3 {
+        font-size: calc(0.9rem + .6vw)!important;
+    }
+    .countdown-banner h4{
+        text-align: center;
+    }
+
+    .product-number input.plus {
+        right: 34%;
+    }
+    .product-number input.minus {
+        left: 34%;
+    }
+
+    .pro-price-sec .add-to-cart .w-100 {
+        width: 90%!important;
+    }
+
+    .pro-gallery  .pro-service .pro-srv-icon {
+        justify-content: start;
+    }
+
+    .nav-tabs .nav-link {
+        padding: 20px 20px;
+        font-size: 12px;
+
+    }
+
+
+    .single-blog .sidebar{
+        margin-top: 40px;
+
+    }
+    .recent-post-main  .post-img img{
+        width: 120px;
+    }
+    .recent-post-main .post-content h6{
+        font-size: 1.2em;
+        font-family: 'Jost', sans-serif;
+        font-weight: 300;
+        color: rgba(22,22,22,1);
+
+    }
+    .recent-post-main .post-content p{
+        font-size: 1em;
+        font-weight: 300;
+    }
+    .recent-post-main{
+        position: relative;
+    }
+    .recent-post-main .post-content{
+        position: absolute;
+        top: 25%;
+        left: 150px;
+    }
+
+    .product-header{
+        display: block;
+        margin: 0 20px;
+    }
+    .product-header-left{
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+
+}
+
+/*        End  Responsive          */
