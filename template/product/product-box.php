@@ -41,11 +41,9 @@
         </div>
 
 
-        <?php $average_rating= ($product->get_average_rating() * 20 ).'%' ; ?>
-
         <div class="pro-star d-inline-flex">
             <div class="rating-star">
-                <div class="rate" style="width: <?= $average_rating; ?>"></div>
+                <div class="rate" style="width: <?= woo_average_rate($product->get_average_rating()); ?>"></div>
             </div>
             <div class="rating-num ms-3"> (<?php  echo $product->get_rating_count(); ?>) </div>
         </div>

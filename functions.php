@@ -181,3 +181,22 @@ function HD_Theme_wrapper_end(){
 function HD_Theme_breadcrumb(){
     return get_template_part('template/single/single-breadcrumb');
 }
+
+
+function woo_average_rate($get_average_rate){
+    $average_rate = ($get_average_rate * 20 ).'%' ;
+    return $average_rate;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
