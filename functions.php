@@ -17,6 +17,10 @@ function homedecor_setup()
     add_theme_support('post-thumbnails');
     add_image_size('blog_sidebar',100,100,true);
     add_theme_support('widgets');
+    add_theme_support('woocommerce');
+    add_theme_support( 'wc-product-gallery-zoom' );
+    add_theme_support( 'wc-product-gallery-lightbox' );
+    add_theme_support( 'wc-product-gallery-slider' );
 
 //  with this function You have the ability to add a menu for wordpress
     register_nav_menus(

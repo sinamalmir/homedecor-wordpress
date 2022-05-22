@@ -2975,9 +2975,24 @@ ul.main-navbar {
     border-color:var(--bg-color-1) ;
 }
 
+p.form-submit {
+    display: block ;
+}
 
+ ins   {
+    color: var(--bg-color-1);
+    text-decoration: none;
+    font-weight: 500 !important;
+}
+.rating-num {
+    font-weight: 300 !important;
+    font-size: 0.7em;
+    margin-top: 3px;
+}
 
-
+.min-height-pro {
+    min-height: 30px;
+}
 
 
 
