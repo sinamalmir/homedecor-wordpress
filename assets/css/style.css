@@ -2993,7 +2993,20 @@ p.form-submit {
 .min-height-pro {
     min-height: 30px;
 }
+.pro-box .product_type_simple.add_to_cart_button.added{
+    visibility: hidden;
+    opacity: 0;
+    bottom: -100px;
+}
 
+.pro-box a.added_to_cart.wc-forward{
+    background-color: var(--bg-color-1);
+    color: #fff;
+    padding: 10px 45px;
+    border-radius: 100px;
+    display: inline-block;
+
+}
 
 
 

@@ -52,9 +52,27 @@
 
 <!--      if u want show nothing when have not any rate , just set one if $product->get_rating_count(); == 0 { dont show anything }   -->
 
+        <div class="add-to-cart "><?php
+            echo sprintf( '<a href="%s" data-quantity="1" class="%s btn btn-danger rounded-pill fw-light anis-btn-s1" %s>%s</a>',
+                esc_url( $product->add_to_cart_url() ),
+                esc_attr( implode( ' ', array_filter( array(
+                    'button', 'product_type_' . $product->get_type(),
+                    $product->is_purchasable() && $product->is_in_stock() ? 'add_to_cart_button' : '',
+                    $product->supports( 'ajax_add_to_cart' ) ? 'ajax_add_to_cart' : '',
+                ) ) ) ),
+                wc_implode_html_attributes( array(
+                    'data-product_id'  => $product->get_id(),
+                    'data-product_sku' => $product->get_sku(),
+                    'aria-label'       => $product->add_to_cart_description(),
+                    'rel'              => 'nofollow',
+                ) ),
+                esc_html( $product->add_to_cart_text() )
+            );
+            ?></div>
 
-        <div class="add-to-cart">
-            <button class="btn btn-danger rounded-pill fw-light anis-btn-s1"> add to cart</button>
-        </div>
+
+
+
+
     </div>
 </div>
