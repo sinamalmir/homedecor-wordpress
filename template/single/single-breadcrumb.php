@@ -26,7 +26,14 @@
 
             <div class="col-lg-6 col-md-12 mt-4">
                 <div class="">
-                    <ol class="breadcrumb mb-0 float-lg-end float-md-start">
+
+                    <?php
+                    if (class_exists('woocommerce')){
+                        if (is_product()){
+                            woocommerce_breadcrumb();
+                        }
+                        else { ?>
+                              <ol class="breadcrumb mb-0 float-lg-end float-md-start">
                         <li class="breadcrumb-item"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></li>
 
                         <?php if (!is_archive() && !is_search() && !is_page()){ ?>
@@ -53,6 +60,37 @@
 
                         </li>
                     </ol>
+                          <?php   }
+                        }else { ?>
+                          <ol class="breadcrumb mb-0 float-lg-end float-md-start">
+                        <li class="breadcrumb-item"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a></li>
+
+                        <?php if (!is_archive() && !is_search() && !is_page()){ ?>
+                            <li class="breadcrumb-item"> <?php the_category(' / '); ?> </li>
+                        <?php  } ?>
+
+
+
+
+
+
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <?php
+                            if (is_archive()){
+                                the_archive_title();
+                            }elseif (is_search()){
+                                echo $wp_query ->found_posts;
+                                _e(' Search result for : ','locale') ; the_search_query();
+                            }
+                            else{
+                                the_title();
+                            }
+                            ?>
+
+                        </li>
+                    </ol>
+                    <?php } ?>
+
                 </div>
             </div>
         </div>

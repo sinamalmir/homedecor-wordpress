@@ -162,9 +162,22 @@ function excerpt($limit, $more = ' ... ')
 
 remove_action('set_comment_cookies', 'wp_set_comment_cookies');
 
+//woocommerce
 
+remove_action('woocommerce_before_main_content','woocommerce_output_content_wrapper');
+remove_action('woocommerce_before_main_content','woocommerce_breadcrumb',20);
+remove_action('woocommerce_after_main_content','woocommerce_output_content_wrapper_end');
 
+add_action('woocommerce_before_main_content','HD_Theme_wrapper_start');
+add_action('woocommerce_before_main_content','HD_Theme_breadcrumb');
+add_action('woocommerce_after_main_content','HD_Theme_wrapper_end');
 
-
-
-
+function HD_Theme_wrapper_start(){
+    echo '<section class="main-content">';
+}
+function HD_Theme_wrapper_end(){
+    echo '</section>';
+}
+function HD_Theme_breadcrumb(){
+    return get_template_part('template/single/single-breadcrumb');
+}
