@@ -1453,14 +1453,19 @@ section.background_bg {
     text-transform: capitalize;
 }
 
-.product-img-box {
+.product-img-box , .flex-viewport {
     position: relative;
-    margin: 5px;
+    margin: 2px;
     padding: 3px;
     border: 1px solid var(--bg-color-2);
     border-radius: 5px;
 }
-
+.product-img-box img , .flex-viewport img{
+    width: 100%;
+}
+.woocommerce-product-gallery ol.flex-control-nav.flex-control-thumbs {
+    display: flex;
+}
 .product-img-box:after {
     content: '%' attr(data-discount);
     position: absolute;
@@ -1475,8 +1480,8 @@ section.background_bg {
 
 }
 
-.product-item-gallery ul li {
-    margin: 5px;
+.product-item-gallery ul li , .woocommerce-product-gallery ol li {
+    margin: 5px !important;
     padding: 3px;
     border: 1px solid var(--bg-color-2);
     border-radius: 5px;
@@ -3002,7 +3007,7 @@ p.form-submit {
 .pro-box a.added_to_cart.wc-forward{
     background-color: var(--bg-color-1);
     color: #fff;
-    padding: 10px 45px;
+    padding: .92em 5em !important;
     border-radius: 100px;
     display: inline-block;
 
@@ -3085,6 +3090,23 @@ p.form-submit {
 
 }
 
+.woocommerce span.onsale{
+    font-weight: 300;
+    background-color: var(--bg-color-1);
+    transform: rotateZ(-30deg);
+    padding: -0.798em;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+    padding: 0.92em 5em;
+    border-radius: 3px;
+    color: #fff;
+    background-color: var(--bg-color-1);
+    border-color: var(--bg-color-1);
+}
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
+    background-color: var(--bg-color-1);
+    border-color: var(--bg-color-1);
+}
 
 
 

@@ -22,31 +22,43 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( $related_products ) : ?>
 
 	<section class="related products">
+        <div class="row justify-content-center">
+        <div class="col-md-6">
 
-		<?php
-		$heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
+            <div class="title-s1 text-center mb-5">
+                <?php
+                $heading = apply_filters( 'woocommerce_product_related_products_heading', __( 'Related products', 'woocommerce' ) );
 
-		if ( $heading ) :
-			?>
-			<h2><?php echo esc_html( $heading ); ?></h2>
-		<?php endif; ?>
+                if ( $heading ) :
+                    ?>
+                <h3 class=""><?php echo esc_html( $heading ); ?></h3>
+                <?php endif; ?>
+
+            </div>
+
+        </div>
+
 		
 		<?php woocommerce_product_loop_start(); ?>
-
+<div class="row">
 			<?php foreach ( $related_products as $related_product ) : ?>
 
 					<?php
 					$post_object = get_post( $related_product->get_id() );
 
 					setup_postdata( $GLOBALS['post'] =& $post_object ); // phpcs:ignore WordPress.WP.GlobalVariablesOverride.Prohibited, Squiz.PHP.DisallowMultipleAssignments.Found
-
-					wc_get_template_part( 'content', 'product' );
+                    ?>
+                    <div class="col-lg-4 col-xl-3 col-md-4 col-sm-6 ">
+                    <?php
+					wc_get_template_part( 'template/product/product', 'box' );
 					?>
+                    </div>
 
 			<?php endforeach; ?>
-
+</div>
 		<?php woocommerce_product_loop_end(); ?>
 
+        </div>
 	</section>
 	<?php
 endif;

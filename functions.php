@@ -167,6 +167,7 @@ remove_action('set_comment_cookies', 'wp_set_comment_cookies');
 remove_action('woocommerce_before_main_content','woocommerce_output_content_wrapper');
 remove_action('woocommerce_before_main_content','woocommerce_breadcrumb',20);
 remove_action('woocommerce_after_main_content','woocommerce_output_content_wrapper_end');
+remove_action('woocommerce_before_single_product_summary','woocommerce_show_product_sale_flash',10);
 
 add_action('woocommerce_before_main_content','HD_Theme_wrapper_start');
 add_action('woocommerce_before_main_content','HD_Theme_breadcrumb');
