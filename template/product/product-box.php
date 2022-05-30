@@ -49,7 +49,7 @@
         </div>
         <?php if (is_archive()) : ?>
         <div class="pr-desc">
-            <?php the_excerpt(); ?>
+            <?php echo excerpt(32 , "....")?>
         </div>
         <?php endif; ?>
 <!--      if u want show nothing when have not any rate , just set one if $product->get_rating_count(); == 0 { dont show anything }   -->

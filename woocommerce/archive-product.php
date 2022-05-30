@@ -82,14 +82,7 @@ do_action('woocommerce_before_main_content');
                             <div class="col-12">
                                 <div class="product-header">
                                     <div class="product-header-left">
-                                        <div class="custom-select">
-                                            <select class="form-control-sm form-control first-null not-chosen">
-                                                <option value=""> show</option>
-                                                <option value="9"> 9</option>
-                                                <option value="12"> 12</option>
-                                                <option value="18"> 18</option>
-                                            </select>
-                                        </div>
+
                                         <div class="product-view">
                                             <a href="javascript:void(0)" class="shorting-icon grid active">
                                                 <i class="fal fa-grip-horizontal"></i>

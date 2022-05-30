@@ -69,7 +69,7 @@ function homedecor_setup()
         array(
             'name' => 'shop sidebar',
             'id' => 'shop_sidebar',
-            'before_widget'=> '<div class="widget">',
+            'before_widget'=> '<div id="%1$s" class="%2$s widget">',
             'after_widget'=> '</div>',
             'before_title'=> '<h6 class="widget-title">',
             'after_title'=> '</h6>'

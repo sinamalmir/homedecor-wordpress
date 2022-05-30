@@ -1496,10 +1496,10 @@ section.background_bg {
     text-transform: capitalize;
 }
 
-.pro-meta-desc ,.woocommerce-product-details__short-description{
+.pro-meta-desc ,.woocommerce-product-details__short-description , .pr-desc{
     font-size: .9em;
     color: #A9A9A9;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
 }
 
 .pro-meta > li {
@@ -2456,7 +2456,7 @@ form#search-form {
 }
 
 
-.filter_price .ui-widget.ui-widget-content {
+.woocommerce .widget_price_filter .ui-widget.ui-widget-content {
     border: 0;
     border-radius: 0;
     background-color: #ddd;
@@ -2464,8 +2464,8 @@ form#search-form {
     margin-bottom: 20px;
 }
 
-.filter_price .ui-slider .ui-slider-range {
-    background-color: #FF324D;
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range {
+    background-color: #FF324D !important;
     border-radius: 0;
 }
 
@@ -2474,7 +2474,7 @@ form#search-form {
     height: 100%;
 }
 
-.filter_price .ui-slider .ui-slider-handle {
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
     cursor: pointer;
     background-color: #fff;
     border-radius: 100%;
@@ -2497,7 +2497,7 @@ form#search-form {
     font-weight: 600;
 }
 
-.filter_price .ui-slider .ui-slider-handle:focus {
+.woocommerce .widget_price_filter .ui-slider .ui-slider-handle:focus {
     outline: none;
     box-shadow: 0px 0px 5px #ff99ab;
 }
@@ -3114,7 +3114,7 @@ p.form-submit {
     width: 85px;
     display: inline-block;
     vertical-align: middle;
-    font-family: 'Font Awesome 5 Pro';
+    font-family: 'Font Awesome 5 Pro' !important;
 }
 .woocommerce .star-rating::before{
     content: '\f005\f005\f005\f005\f005';
@@ -3201,6 +3201,33 @@ p.form-submit {
 .woocommerce p.stars a::before{
     font-size: 1.4em;
     color: #ffb300;
+}
+.woocommerce .widget_price_filter .price_slider_amount .button{
+    font-size: 1em !important;
+}
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+    padding: .92em 3em !important;
+}
+.woocommerce .widget_rating_filter ul li a {
+    display: flex !important;
+    justify-content: space-between !important;
+}
+.woocommerce .widget_rating_filter ul li{
+    padding: 0 !important;
+}
+.woocommerce .widget_rating_filter ul li a{
+    padding: 0 !important;
+}
+.woocommerce .widget_rating_filter ul li.chosen a::before{
+    margin-right: -8.382em !important;
+    color: var(--bg-color-1) !important;
+
+}
+.widget_product_categories  .product-categories li.cat-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    font-size: 1.2em !important;
 }
 
 
