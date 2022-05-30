@@ -65,6 +65,15 @@ function homedecor_setup()
             'before_title'=> '<h6 class="widget-title">',
             'after_title'=> '</h6>'
         ));
+    register_sidebar(
+        array(
+            'name' => 'shop sidebar',
+            'id' => 'shop_sidebar',
+            'before_widget'=> '<div class="widget">',
+            'after_widget'=> '</div>',
+            'before_title'=> '<h6 class="widget-title">',
+            'after_title'=> '</h6>'
+        ));
 
 
 }
@@ -170,10 +179,20 @@ remove_action('woocommerce_after_main_content','woocommerce_output_content_wrapp
 remove_action('woocommerce_before_single_product_summary','woocommerce_show_product_sale_flash',10);
 remove_action('woocommerce_after_single_product_summary','woocommerce_output_product_data_tabs',10);
 remove_action('woocommerce_after_single_product_summary','woocommerce_output_related_products',20);
+remove_action('woocommerce_before_shop_loop','woocommerce_catalog_ordering',30);
+remove_action('woocommerce_before_shop_loop','woocommerce_result_count',20);
 
 add_action('woocommerce_before_main_content','HD_Theme_wrapper_start');
 add_action('woocommerce_before_main_content','HD_Theme_breadcrumb');
 add_action('woocommerce_after_main_content','HD_Theme_wrapper_end');
+
+function override_page_title(){
+    return false;
+}
+add_filter('woocommerce_show_page_title' , 'override_page_title');
+
+
+
 
 function HD_Theme_wrapper_start(){
     echo '<section class="main-content">';

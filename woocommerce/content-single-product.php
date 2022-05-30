@@ -197,6 +197,7 @@ if (post_password_required()) {
                                     <h3 class="fs-3 mb-3"> product description </h3>
                                 </div>
                                 <?php the_content(); ?>
+
                             </div>
 
                         </div>

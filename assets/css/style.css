@@ -2316,21 +2316,6 @@ form#search-form {
 
 }
 
-.custom-select {
-    position: relative;
-}
-
-.custom-select::before {
-    content: "\f078";
-    font-family: "Font Awesome 5 Pro";
-    position: absolute;
-    display: block;
-    top: 50%;
-    right: 15px;
-    pointer-events: none;
-    transform: translateY(-50%);
-    font-size: .8em;
-}
 
 .custom-select select {
     padding: 8px 35px 8px 15px;

@@ -29,7 +29,7 @@
 
                     <?php
                     if (class_exists('woocommerce')){
-                        if (is_product()){
+                        if (is_product() || is_product_taxonomy() || is_shop() || is_checkout() || is_cart()){
                             woocommerce_breadcrumb();
                         }
                         else { ?>
